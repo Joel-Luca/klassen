@@ -62,7 +62,6 @@ public class IntArrayExtensions {
     }
 
     static int[] sort(int[] elements) {
-        int[] sortiert = new int[elements.length];
         boolean sort = true;
 
         while(sort) {
@@ -100,8 +99,9 @@ public class IntArrayExtensions {
         while(!full) {
             full = true;
             for(int zahl : erg) {
-                if(zahl == -1) {
+                if (zahl == -1) {
                     full = false;
+                    break;
                 }
             }
 
